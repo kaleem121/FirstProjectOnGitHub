@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Dell\eclipse-workspace\TechBlog_App\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2106697201.index
+483154091.index
+3071412147.index
+1790620891.index
+1456023799.index
+3957100050.index
