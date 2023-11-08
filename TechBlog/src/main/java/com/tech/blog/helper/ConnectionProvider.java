@@ -14,7 +14,7 @@ public class ConnectionProvider
         		Class.forName("com.mysql.jdbc.Driver");
         		
         		//Creating connection with database
-        		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/techblog", "root", "kaleem121");
+        		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/techblog", "root", "Kaleem@121");
     			
     		}
     		

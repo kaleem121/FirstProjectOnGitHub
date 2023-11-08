@@ -37,7 +37,7 @@ if (user == null) {
 }
 
 body {
-background:url(img/sample.jpeg);
+background:url(img/Bckgrndimg.jpg);
 background-size: cover;
 background-attchment: fixed;
 

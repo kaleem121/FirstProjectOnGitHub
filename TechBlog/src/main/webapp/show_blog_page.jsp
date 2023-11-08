@@ -1,3 +1,4 @@
+<%@page import="com.tech.blog.dao.LikeDao"%>
 <%@ page import="com.tech.blog.dao.PostDao" %>
 <%@ page import="com.tech.blog.helper.ConnectionProvider" %>
 <%@ page import= "com.tech.blog.entities.Post" %>
@@ -175,9 +176,13 @@ background-attchment: fixed;
                   <pre><%=post.getpCode() %></pre>
                   </div>
                   
-                 </div>
+               </div> 
                  <div class ="card-footer primary-background">
-                   <a href="#!" class="btn btn-outline-light btn-sm"><i class="fa fa-thumbs-o-up">10</i></a>
+                 
+                 <%
+                 LikeDao dao = new LikeDao(ConnectionProvider.getConnection());
+                 %>
+                   <a href="#!" onClick = "doLike(<%= post.getPid() %> ,<%= user.getId()%>)" class="btn btn-outline-light btn-sm"><i class="fa fa-thumbs-o-up"></i><span class="like-counter"><%=dao.countLikeOnPost(post.getPid())%></span></a>
                    <a href="#!" class="btn btn-outline-light btn-sm"><i class="fa fa-commenting-o">7</i></a>
                    <a href="#!" class="btn bt-outline-light btn-sm">Posted By<%=postuser.getName() +postuser.getAbout()+postuser.getEmail() %></a>
                  </div>
