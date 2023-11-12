@@ -151,7 +151,7 @@ background-attchment: fixed;
                  
                  <div class ="card-body">
                  
-                 <img class="card-img-top my-2" src="blog_pics/<%=post.getpPic() %>" alt="Card image cap">
+                 <img class="card-img-top my-2" src="pics/<%=post.getpPic() %>" alt="Card image cap">
                   
                  <div class ="row my-3 row-user">
                  
